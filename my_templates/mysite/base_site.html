@@ -1,0 +1,16 @@
+{% extends "mysite/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans 'Polling Site' %} | {% trans 'Home' %}{% endblock %}
+
+{% block databrowse_title %}
+<h1 id="header">{% trans 'Welcome To Polling Site' %}</h1><hr>
+{% endblock %}
+<div id="content">
+{% block content %}
+<h4><a href="{% block url1 %}{% endblock %}"></a></h4>
+<h4><a href="{% block url2 %}{% endblock %}"></a></h4>
+
+{% endblock %}
+</div>
+{% block nav-global %}{% endblock %}
